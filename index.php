@@ -23,12 +23,13 @@
     <h2>
       Korea-China News
     </h2>
-    <ul>
+    <ul class="li_common">
 <?
   while($row = mysql_fetch_array($result)){
 ?>
-      <li class="li_common" width='80%'><a href="read.php?num=<?=$row['num']?>"><?=$row['title']?></a></li>
-      <li class="li_common" width='20%'><?=$row['date']?></li>
+      <li><a href="read.php?num=<?=$row['num']?>"><?=$row['title']?></a></li>
+      <li><?=$row['name']?></li>
+      <li><?=$row['date']?></li>
 <?
   }
   mysql_close($conn);

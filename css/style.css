@@ -59,16 +59,14 @@ body {
   padding: 0px;
 }
 
-/**/모든 태그에 대해서 처리
-* {
-  margin: 0px;
-  padding: 0px;
-}
 .li_common {
+  text-decoration: none;
+}
+
+.li_common li {
   float: left;
   text-align:center;
-  background-color: #399;
-  width: 33%;
+  width: 30%;
 }
 
 .img_list {
@@ -76,8 +74,8 @@ body {
 }
 
 .img_list li {
-  text-align:center;
   float: left;
+  text-align:center;
   width: 33%;
   list-style-type: none;
 }
